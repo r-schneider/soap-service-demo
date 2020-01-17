@@ -34,6 +34,6 @@ public class WebServiceConfig {
 
   @Bean
   public XsdSchema moviesSchema() {
-    return new SimpleXsdSchema(new ClassPathResource("movies.xsd"));
+    return new SimpleXsdSchema(new ClassPathResource("/wsdl/movie.xsd"));
   }
 }
