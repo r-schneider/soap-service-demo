@@ -6,9 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 
-import io.spring.guides.gs_producing_web_service.GetMovieRequest;
-import io.spring.guides.gs_producing_web_service.GetMovieResponse;
-
 @Endpoint
 public class MovieEndpointImpl implements MovieEndpoint {
 
