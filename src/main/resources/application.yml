@@ -1,0 +1,3 @@
+service:
+  constants:
+    NAMESPACE_URI: "http://springsoap.com/demo/movieservice"
