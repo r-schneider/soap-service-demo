@@ -4,9 +4,10 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
+@Endpoint
 public interface MovieEndpoint {
 
-    @PayloadRoot(namespace = "${service.constants.NAMESPACE_URI}", localPart = "getMovieRequest")
+    @PayloadRoot(namespace = "http://springsoap.com/demo/movieservice", localPart = "getMovieRequest")
     @ResponsePayload
     public GetMovieResponse getMovie(@RequestPayload GetMovieRequest request);
 }

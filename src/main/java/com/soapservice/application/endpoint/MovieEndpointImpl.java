@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 
-@Endpoint
 public class MovieEndpointImpl implements MovieEndpoint {
 
     private MovieRepository repository;

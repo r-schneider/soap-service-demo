@@ -1,5 +1,5 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="${service.constants.NAMESPACE_URI}"
-           targetNamespace="${service.constants.NAMESPACE_URI}" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://springsoap.com/demo/movieservice"
+           targetNamespace="http://springsoap.com/demo/movieservice" elementFormDefault="qualified">
 
     <xs:element name="getMovieRequest">
         <xs:complexType>

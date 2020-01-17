@@ -27,7 +27,7 @@ public class WebServiceConfig {
     DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
     wsdl11Definition.setPortTypeName("MoviesPort");
     wsdl11Definition.setLocationUri("/service/movie");
-    wsdl11Definition.setTargetNamespace("${service.constants.NAMESPACE_URI}");
+    wsdl11Definition.setTargetNamespace("http://springsoap.com/demo/movieservice");
     wsdl11Definition.setSchema(moviesSchema);
     return wsdl11Definition;
   }
