@@ -1,7 +1,7 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://springsoap.com/demo/movieservice"
-           targetNamespace="http://springsoap.com/demo/movieservice" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
 
-    <xs:element name="getMovieRequest">
+    <xs:element name="movieRequest">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="title" type="xs:string"/>
@@ -9,7 +9,7 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="getMovieResponse">
+    <xs:element name="movieResponse">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="movie" type="tns:movie"/>

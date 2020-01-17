@@ -8,6 +8,8 @@ import javax.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
+import io.spring.guides.gs_producing_web_service.Movie;
+
 @Component
 public class MovieRepository {
 
@@ -27,28 +29,28 @@ public class MovieRepository {
     movie2.setTitle("Damn Robots");
     movie2.setYear("2011");
     movie2.setGenre("Sci-fi");
-    movie2.setSynopsis("In a not so far away future...");
+    movie2.setSynopsis("In the near future...");
     movies.put(movie2.getTitle().toLowerCase(), movie2);
 
     Movie movie3 = new Movie();
     movie3.setTitle("I am Briar");
     movie3.setYear("2019");
     movie3.setGenre("Action");
-    movie3.setSynopsis("Once a drift king...");
+    movie3.setSynopsis("Briar decided to challenge the drift king but...");
     movies.put(movie3.getTitle().toLowerCase(), movie3);
 
     Movie movie4 = new Movie();
     movie4.setTitle("Cat pawns");
     movie4.setYear("2010");
     movie4.setGenre("Comedy");
-    movie4.setSynopsis("After losing their jobs, two friends...");
+    movie4.setSynopsis("After losing his job...");
     movies.put(movie4.getTitle().toLowerCase(), movie4);
 
     Movie movie5 = new Movie();
     movie5.setTitle("Pixelated");
     movie5.setYear("2013");
     movie5.setGenre("Drama");
-    movie5.setSynopsis("When a dear friend is about to die...");
+    movie5.setSynopsis("Suffering from a past trauma...");
     movies.put(movie5.getTitle().toLowerCase(), movie5);
   }
 

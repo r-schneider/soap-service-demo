@@ -19,21 +19,21 @@ public class WebServiceConfig {
     MessageDispatcherServlet servlet = new MessageDispatcherServlet();
     servlet.setApplicationContext(applicationContext);
     servlet.setTransformWsdlLocations(true);
-    return new ServletRegistrationBean<MessageDispatcherServlet>(servlet, "/service/*");
+    return new ServletRegistrationBean<MessageDispatcherServlet>(servlet, "/ws/*");
   }
 
   @Bean(name = "movies")
   public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema moviesSchema) {
     DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
     wsdl11Definition.setPortTypeName("MoviesPort");
-    wsdl11Definition.setLocationUri("/service/movie");
-    wsdl11Definition.setTargetNamespace("http://springsoap.com/demo/movieservice");
+    wsdl11Definition.setLocationUri("/ws");
+    wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
     wsdl11Definition.setSchema(moviesSchema);
     return wsdl11Definition;
   }
 
   @Bean
   public XsdSchema moviesSchema() {
-    return new SimpleXsdSchema(new ClassPathResource("wsdl/movie.xsd"));
+    return new SimpleXsdSchema(new ClassPathResource("movies.xsd"));
   }
 }
