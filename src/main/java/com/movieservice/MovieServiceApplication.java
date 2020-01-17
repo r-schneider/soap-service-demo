@@ -1,13 +1,13 @@
-package com.soapservice;
+package com.movieservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SoapServiceApplication {
+public class MovieServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SoapServiceApplication.class, args);
+		SpringApplication.run(MovieServiceApplication.class, args);
 	}
 
 }

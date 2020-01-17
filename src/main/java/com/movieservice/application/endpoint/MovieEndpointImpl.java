@@ -1,6 +1,6 @@
-package com.soapservice.application.endpoint;
+package com.movieservice.application.endpoint;
 
-import com.soapservice.domain.repository.MovieRepository;
+import com.movieservice.domain.repository.MovieRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;

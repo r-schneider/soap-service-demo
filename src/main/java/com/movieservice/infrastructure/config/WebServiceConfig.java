@@ -1,4 +1,4 @@
-package com.soapservice.infrastructure.config;
+package com.movieservice.infrastructure.config;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;

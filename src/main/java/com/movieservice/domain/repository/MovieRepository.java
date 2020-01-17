@@ -1,4 +1,4 @@
-package com.soapservice.domain.repository;
+package com.movieservice.domain.repository;
 
 import java.util.HashMap;
 import java.util.Map;
