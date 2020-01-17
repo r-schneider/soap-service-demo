@@ -1,4 +1,4 @@
-package com.soapservice.application;
+package com.soapservice.application.endpoint;
 
 import com.soapservice.domain.repository.MovieRepository;
 
@@ -12,18 +12,17 @@ import io.spring.guides.gs_producing_web_service.MovieRequest;
 import io.spring.guides.gs_producing_web_service.MovieResponse;
 
 @Endpoint
-public class MovieEndpoint {
-
-    private static final String NAMESPACE_URI = "http://spring.io/guides/gs-producing-web-service";
+public class MovieEndpointImpl implements MovieEndpoint {
 
     private MovieRepository repository;
 
     @Autowired
-    public MovieEndpoint(MovieRepository repository) {
+    public MovieEndpointImpl(MovieRepository repository) {
         this.repository = repository;
     }
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "movieRequest")
+    @Override
+    @PayloadRoot(namespace = "http://spring.io/guides/gs-producing-web-service", localPart = "movieRequest")
     @ResponsePayload
     public MovieResponse getMovie(@RequestPayload MovieRequest request) {
         MovieResponse response = new MovieResponse();
