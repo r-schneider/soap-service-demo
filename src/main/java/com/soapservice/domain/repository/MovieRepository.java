@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import io.spring.guides.gs_producing_web_service.Movie;
+import soap.spring.demo.movieservice.Movie;
 
 @Component
 public class MovieRepository {

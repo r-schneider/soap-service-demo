@@ -86,7 +86,6 @@
 				</executions>
 				<configuration>
 					<sources>
-						<source>${project.basedir}/src/main/java/</source>
 						<source>${project.basedir}/src/main/resources/</source>
 					</sources>
 					<schemaDirectory>src/main/resources/wsdl</schemaDirectory>

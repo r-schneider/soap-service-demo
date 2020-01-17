@@ -1,7 +1,7 @@
 package com.soapservice.application.endpoint;
 
-import io.spring.guides.gs_producing_web_service.MovieRequest;
-import io.spring.guides.gs_producing_web_service.MovieResponse;
+import soap.spring.demo.movieservice.MovieRequest;
+import soap.spring.demo.movieservice.MovieResponse;
 
 public interface MovieEndpoint {
 

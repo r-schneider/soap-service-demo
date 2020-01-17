@@ -19,16 +19,16 @@ public class WebServiceConfig {
     MessageDispatcherServlet servlet = new MessageDispatcherServlet();
     servlet.setApplicationContext(applicationContext);
     servlet.setTransformWsdlLocations(true);
-    return new ServletRegistrationBean<MessageDispatcherServlet>(servlet, "/ws/*");
+    return new ServletRegistrationBean<MessageDispatcherServlet>(servlet, "/service/*");
   }
 
   @Bean(name = "movies")
-  public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema moviesSchema) {
+  public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema movieSchema) {
     DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
     wsdl11Definition.setPortTypeName("MoviesPort");
-    wsdl11Definition.setLocationUri("/ws");
-    wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
-    wsdl11Definition.setSchema(moviesSchema);
+    wsdl11Definition.setLocationUri("/service/movie");
+    wsdl11Definition.setTargetNamespace("http://spring.soap/demo/movieservice");
+    wsdl11Definition.setSchema(movieSchema);
     return wsdl11Definition;
   }
 

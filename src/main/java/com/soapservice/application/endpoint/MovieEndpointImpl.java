@@ -8,8 +8,8 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import io.spring.guides.gs_producing_web_service.MovieRequest;
-import io.spring.guides.gs_producing_web_service.MovieResponse;
+import soap.spring.demo.movieservice.MovieRequest;
+import soap.spring.demo.movieservice.MovieResponse;
 
 @Endpoint
 public class MovieEndpointImpl implements MovieEndpoint {
@@ -22,7 +22,7 @@ public class MovieEndpointImpl implements MovieEndpoint {
     }
 
     @Override
-    @PayloadRoot(namespace = "http://spring.io/guides/gs-producing-web-service", localPart = "movieRequest")
+    @PayloadRoot(namespace = "http://spring.soap/demo/movieservice", localPart = "movieRequest")
     @ResponsePayload
     public MovieResponse getMovie(@RequestPayload MovieRequest request) {
         MovieResponse response = new MovieResponse();
