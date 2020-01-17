@@ -89,6 +89,8 @@
 						<source>${project.basedir}/src/main/java/</source>
 						<source>${project.basedir}/src/main/resources/</source>
 					</sources>
+					<schemaDirectory>src/main/resources/wsdl</schemaDirectory>
+       				<schemaFiles>movie.xsd</schemaFiles>
 				</configuration>
 			</plugin>
 		</plugins>
