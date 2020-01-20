@@ -89,7 +89,7 @@
 						<source>${project.basedir}/src/main/resources/</source>
 					</sources>
 					<schemaDirectory>src/main/resources/wsdl</schemaDirectory>
-       				<schemaFiles>movie.xsd</schemaFiles>
+       				<schemaFiles>movies.xsd</schemaFiles>
 				</configuration>
 			</plugin>
 		</plugins>

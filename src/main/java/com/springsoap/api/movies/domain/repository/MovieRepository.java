@@ -1,19 +1,19 @@
-package com.movieservice.domain.repository;
+package com.springsoap.api.movies.domain.repository;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import javax.annotation.PostConstruct;
 
+import com.springsoap.api.movies.Movie;
+
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
-
-import soap.spring.demo.movieservice.Movie;
 
 @Component
 public class MovieRepository {
 
-    private static final Map<String, Movie> movies = new HashMap<>();
+  private static final Map<String, Movie> movies = new HashMap<>();
 
   @PostConstruct
   public void initData() {
