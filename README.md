@@ -1,2 +1,1 @@
-# soap-service-demo
-Soap web service example
+# spring-boot-soap-web-service-demo
